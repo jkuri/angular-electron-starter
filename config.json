@@ -1,5 +1,6 @@
 {
   "externalPackages": {
+    "reflect-metadata": "_reflect_metadata",
     "@angular/core": "_angular_core",
     "@angular/common": "_angular_common",
     "@angular/platform-browser-dynamic": "_angular_platform_browser_dynamic",
