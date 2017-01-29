@@ -25,7 +25,9 @@ npm run build
 
 ### Wrap as Application
 
-// TODO
+```sh
+npm run app
+```
 
 
 ### LICENCE

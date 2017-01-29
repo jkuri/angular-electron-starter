@@ -2,6 +2,7 @@ import * as chalk from 'chalk';
 import * as chokidar from 'chokidar';
 import * as path from 'path';
 import { Build } from './build';
+import { makePackages } from './package';
 import {
   generateIndexHtml,
   generateCSS,
@@ -89,10 +90,23 @@ function build(): Promise<null> {
     });
 }
 
+function makeApp(): Promise<null> {
+  return build()
+    .then(() => makePackages())
+    .then(() => {
+      console.log(`${chalk.green('✔')} Done.`)
+    })
+    .catch(err => {
+      throw new Error(err);
+    });
+}
+
 let arg = process.argv.slice(2)[0];
 
 if (arg === 'dev') {
   dev();
 } else if (arg === 'build') {
   build();
+} else if (arg === 'app') {
+  makeApp();
 }
