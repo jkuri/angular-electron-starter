@@ -26,7 +26,7 @@ npm run build
 ### Wrap as Application
 
 ```sh
-npm run app
+npm run dist
 ```
 
 

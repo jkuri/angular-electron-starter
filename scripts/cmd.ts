@@ -107,6 +107,6 @@ if (arg === 'dev') {
   dev();
 } else if (arg === 'build') {
   build();
-} else if (arg === 'app') {
+} else if (arg === 'dist') {
   makeApp();
 }

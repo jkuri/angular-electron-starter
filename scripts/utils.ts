@@ -43,7 +43,9 @@ export function generatePackageJson(): Promise<null> {
     let productPkgJson: any = {
       name: pkgJson.name,
       version: pkgJson.version,
-      main: 'electron.js'
+      description: pkgJson.description,
+      author: pkgJson.author,
+      main: 'electron.js',
     };
 
     fs.writeJson(path.resolve(__dirname, '../dist/package.json'), productPkgJson, err => {
