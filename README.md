@@ -22,6 +22,20 @@ npm run electron # this enables livereload
 npm run build:prod
 ```
 
+### Running Tests
+
+#### E2E
+
+```sh
+npm run e2e
+```
+
+#### Unit
+
+```sh
+npm test
+```
+
 ### Wrap Application
 
 ```sh
@@ -29,7 +43,6 @@ npm run app:linux # Wrap as Linux App
 npm run app:win # Wrap as Windows App
 npm run app:mac # Wrap as MacOS App
 ```
-
 
 ### LICENCE
 
