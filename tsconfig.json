@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["dom", "es6"],
-    "target": "es2015",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "declaration": false,
@@ -9,10 +9,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "./build",
     "rootDir": ".",
     "typeRoots": [
       "node_modules/@types"
     ]
-  }
+  },
+  "compileOnSave": false
 }

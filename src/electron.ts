@@ -1,5 +1,13 @@
 const electron = require('electron');
 const { app, BrowserWindow } = electron;
+const { join } = require('path');
+
+if (process.argv.slice(1).some(val => val === '--serve')) {
+  require('electron-reload')(__dirname, {
+    electron: join(__dirname, '..', 'node_modules', '.bin', 'electron'),
+    hardResetMethod: 'exit'
+  });
+}
 
 let win: any = null;
 

@@ -11,22 +11,23 @@ npm install
 
 ### Development Mode
 
-This enables livereload.
-
 ```sh
-npm start
+npm start # wait to compile
+npm run electron # this enables livereload
 ```
 
 ### Production Build
 
 ```sh
-npm run build
+npm run build:prod
 ```
 
-### Wrap as Application
+### Wrap Application
 
 ```sh
-npm run dist
+npm run app:linux # Wrap as Linux App
+npm run app:win # Wrap as Windows App
+npm run app:mac # Wrap as MacOS App
 ```
 
 
