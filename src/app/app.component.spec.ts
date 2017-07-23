@@ -9,23 +9,12 @@ describe('greeting component', () => {
     TestBed.compileComponents();
   });
 
-  it('should have title `app works!`', async(() => {
+  it('should have title `Yo!`', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
 
-    expect(compiled.innerHTML).toContain('app works!');
-    expect(compiled.querySelector('h1').innerHTML).toContain('app works!');
-  }));
-
-  it('should change title to `app really works!`', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    fixture.debugElement.componentInstance.title = 'app really works!';
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-
-    expect(compiled.querySelector('h1').innerHTML).not.toContain('app works!');
-    expect(compiled.querySelector('h1').innerHTML).toContain('app really works!');
+    expect(compiled.innerHTML).toContain('Yo!');
+    expect(compiled.querySelector('p').innerHTML).toContain('Yo!');
   }));
 });
